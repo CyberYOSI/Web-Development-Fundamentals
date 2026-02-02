@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beachview Guest House - Luxury Accommodation in Dornoch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Welcome to Beachview Guest House - A four-star accommodation in Dornoch, Scotland offering comfortable stays with stunning views.">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Beachview Logo">
+                Beachview
+            </a>
+            <!-- Add the hamburger button for mobile -->
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Rooms</a>
+                    <div class="dropdown-content">
+                        <a href="Glasgowroom.html">Glasgow room</a>
+                        <a href="Edinburghroom.html">Edinburgh room</a>
+                        <a href="Aberdeenroom.html">Aberdeen room</a>
+                        <a href="Dundeeroom.html">Dundee room</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="local-area.html">Local Area</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="btn">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Contact Us</h1>
+        
+        <section class="contact-grid">
+            <div class="contact-info-card">
+                <h2>Get in Touch</h2>
+                <ul class="contact-details">
+                    <li>📞 Phone: +44 (0)1862 810 555</li>
+                    <li>📧 Email: info@beachviewdornoch.com</li>
+                    <li>📍 Address: Shore Road, Dornoch, Sutherland, Scotland, IV25 3LB</li>
+                    <li>⏰ Reception Hours: 7:00 AM - 10:00 PM</li>
+                </ul>
+            </div>
+
+            <div class="contact-form-card">
+                <h2>Send us a Message</h2>
+                <form class="inquiry-form">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Please select...</option>
+                            <option value="booking">Booking Inquiry</option>
+                            <option value="availability">Check Availability</option>
+                            <option value="special">Special Requirements</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="location">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2234057.4050384667!2d-6.555941098172278!3d56.851146457372515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x48886bf80fc628b7%3A0x86a5ffb0e1ff19c3!2sNew%20College%20Lanarkshire%2C%20Coatbridge%20Campus%2C%20Kildonan%20Street%2C%20Coatbridge!3m2!1d55.864535999999994!2d-4.016283!4m5!1s0x488f8b943d4c1cd5%3A0x2dad4dcf76c0403a!2sSutherland%20House%20(Dornoch)%20Ltd%2C%20Argyle%20St%2C%20Dornoch%20IV25%203LA!3m2!1d57.880233!2d-4.0255570999999994!5e0!3m2!1sen!2suk!4v1742743512049!5m2!1sen!2suk"                     
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="directions">
+            <h2>Getting Here</h2>
+            <div class="directions-grid">
+                <div class="direction-card">
+                    <h3>🚗 By Car</h3>
+                    <p>From Inverness, take the A9 north to Tain, then follow the A949 to Dornoch. Our guest house is located on Shore Road, overlooking the beach.</p>
+                </div>
+                <div class="direction-card">
+                    <h3>🚂 By Train</h3>
+                    <p>The nearest railway station is Tain (12 miles). We can arrange pickup by prior arrangement.</p>
+                </div>
+                <div class="direction-card">
+                    <h3>✈️ By Air</h3>
+                    <p>Inverness Airport is the closest airport (45 miles). Car hire and airport transfers available.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>📍 Beachview Guest House</p>
+                <p>Shore Road, Dornoch</p>
+                <p>Sutherland, Scotland</p>
+                <p>☎️ +44 (0)1862 810 555</p>
+                <p>📧 info@beachviewdornoch.com</p>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Glasgowroom.html">Our Rooms</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

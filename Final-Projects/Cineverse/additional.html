@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info & Documentation - CineVerse: Archive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="site-title">CINEVERSE: ARCHIVE</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="archive.html">Archive</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="directors.html">Directors</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="additional.html" class="active">Additional</a>
+                <a href="info.html">Info</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Website Documentation</h1>
+
+        <section class="info-section">
+            <h2>Website Summary</h2>
+            <p>CineVerse: Archive is a comprehensive web-based digital archive celebrating classic black and white cinema from the silent era through the 1960s. This educational website showcases legendary films, pioneering directors, and influential movements that shaped the foundations of modern cinema. The site was created using HTML5 for semantic structure, CSS for visual styling, and JavaScript for interactive features. The design employs a sophisticated dark theme (#121212 background) with gold accents (#B8860B) to evoke the elegance and gravitas of classic cinema, using Fonts (Montserrat for headings, Lora for body text) to create hierarchy and readability.</p>
+        </section>
+        <section class="info-section">
+            <h2>Accessibility Implementation</h2>
+            <p>Accessibility was considerd throughout development to ensure the website is usable by people with diverse abilities:</p>
+            <ul>
+                <li><strong>Semantic HTML5:</strong> Proper use of header, nav, main, section, article, footer, table, and form elements provides meaningful structure for screen readers and assistive technologies.</li>
+                <li><strong>ARIA Labels:</strong> All interactive elements (buttons, form inputs, navigation links) have descriptive labels. Images include alt attributes with meaningful descriptions.</li>
+                <li><strong>Keyboard Navigation:</strong> All interactive features (table sorting, lightbox gallery, form submission) are fully accessible via keyboard. Users can tab through elements and activate functions with Enter/Space keys.</li>
+                <li><strong>Color Contrast:</strong> The color scheme maintains WCAG AA compliance with high contrast ratios - light text (#E0E0E0) on dark background (#121212) provides excellent readability. Gold accents (#B8860B) are used judiciously for emphasis.</li>
+                <li><strong>Focus Indicators:</strong> Form inputs and interactive elements display visible focus states (gold border) so keyboard users can track their position.</li>
+                <li><strong>Responsive Typography:</strong> Font sizes use rem units for scalability. Line heights (1.6-1.8) ensure comfortable reading. Headings use clear hierarchy (h1-h4).</li>
+                <li><strong>Form Accessibility:</strong> Labels are properly associated with inputs using for/id attributes. Error messages are announced to screen readers. Required fields are clearly marked.</li>
+            </ul>
+        </section>
+
+        <section class="info-section">
+            <h2>Security Considerations</h2>
+            <p>While this is a static informational website without server-side processing or databases, several security best practices were implemented:</p>
+            <ul>
+                <li><strong>No External Resources:</strong> Only Internal resources are loaded like video and images </li>
+                <li><strong>No Inline JavaScript:</strong> Most of JavaScript is contained in external .js files rather than inline event handlers, following security best practices and Content Security Policy guidelines.</li>
+                <li><strong>Form Method Security:</strong> The contact form uses client-side validation only (no server submission) to demonstrate functionality without exposing backend vulnerabilities. In production, this would use HTTPS POST requests with CSRF tokens.</li>
+                <li><strong>Cookie-Free:</strong> No cookies or local storage are used, preventing cookie theft or session hijacking concerns.</li>
+                <li><strong>Responsive Security Headers:</strong> HTML meta tags include UTF-8 charset declaration and viewport settings to prevent clickjacking and ensure proper rendering.</li>
+            </ul>
+        </section>
+
+        <section class="info-section">
+            <h2>Future Enhancements</h2>
+            <p>Potential improvements to expand the website's functionality and user experience:</p>
+            <ul>
+                <li><strong>User Accounts & Personalization:</strong> Implement user registration/login allowing visitors to create personalized watchlists, rate films, and save favorite directors. User profiles could track viewing history and provide personalized recommendations.</li>
+                <li><strong>Advanced Search & Filtering:</strong> Expand the catalog search to include multi-criteria filtering (decade ranges, multiple directors, genre combinations, runtime ranges, rating thresholds). Add auto-complete suggestions and search history.</li>
+                <li><strong>Film Comparison Tool:</strong> Create an interactive feature allowing side-by-side comparison of two or more films across multiple dimensions (technical specs, themes, cinematography, cultural impact).</li>
+                <li><strong>Interactive Timeline:</strong> Develop a visual timeline of cinema history showing the evolution of film movements, technological innovations, and major releases from 1895-1970.</li>
+                <li><strong>Community Features:</strong> Add user-submitted reviews, discussion forums for film analysis, and crowdsourced film recommendations. Implement moderation tools to maintain quality discourse.</li>
+                <li><strong>Expanded Multimedia:</strong> Include more video essays, director interviews, behind-the-scenes footage, and audio commentary tracks. Create curated playlists for themed viewing marathons.</li>
+                <li><strong>Mobile App:</strong> Develop native iOS and Android applications with offline viewing capabilities, push notifications for new additions, and mobile-optimized navigation.</li>
+                <li><strong>Database Integration:</strong> Connect to external APIs (OMDB, TMDB) for expanded film metadata, poster images, cast information, and real-time ratings updates.</li>
+                <li><strong>Accessibility Enhancements:</strong> Add audio descriptions for film clips, closed captions for video content, high-contrast theme option, and text-to-speech functionality for articles.</li>
+                <li><strong>Multilingual Support:</strong> Translate the website into multiple languages to reach international audiences and celebrate world cinema appropriately.</li>
+            </ul>
+        </section>
+
+        <section class="info-section">
+            <h2>Technical Specifications</h2>
+            <ul>
+                <li><strong>HTML Version:</strong> HTML5 with DOCTYPE declaration</li>
+                <li><strong>CSS:</strong> External stylesheet (styles.css) + Internal styles on gallery.html</li>
+                <li><strong>JavaScript:</strong> Vanilla JS</li>
+                <li><strong>Fonts:</strong> Fonts (Montserrat, Lora)</li>
+                <li><strong>Validation:</strong> W3C HTML5 compliant, CSS3 compliant</li>
+                <li><strong>Pages:</strong>  (index.html, archive.html, catalog.html, directors.html, gallery.html, contact.html, info.html)</li>
+                <li><strong>Color Scheme:</strong> #121212 (background), #E0E0E0 (text), #B8860B (accents)</li>
+                <li><strong>programming software:</strong> visual studio code</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; b01828733@studentmail.uws.ac.uk</p>
+    </footer>
+</body>
+</html>

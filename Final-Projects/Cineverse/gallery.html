@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - CineVerse: Archive</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 2rem 0;
+            border: 2px solid #B8860B;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 2rem 0;
+            border: 2px solid #B8860B;
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .audio-player {
+            width: 100%;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            background-color: #1a1a1a;
+            border: 1px solid rgba(184, 134, 11, 0.3);
+            border-radius: 0;
+        }
+
+        .audio-player audio {
+            width: 100%;
+            filter: sepia(100%) saturate(300%) hue-rotate(5deg);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .gallery-item {
+            cursor: pointer;
+            border: 1px solid rgba(184, 134, 11, 0.3);
+            transition: border-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            border-color: #B8860B;
+            transform: scale(1.02);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            border: 2px solid #B8860B;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: #B8860B;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(184, 134, 11, 0.8);
+            color: #121212;
+            border: none;
+            padding: 1rem 1.5rem;
+            font-size: 2rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .lightbox-prev {
+            left: -60px;
+        }
+
+        .lightbox-next {
+            right: -60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="site-title">CINEVERSE: ARCHIVE</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="archive.html">Archive</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="directors.html">Directors</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="additional.html">Additional</a>
+                <a href="info.html">Info</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Visual Archive</h1>
+        <p>Iconic stills, film clips, and soundtracks from the golden age of cinema.</p>
+
+        <h2 class="section-title">Film Clip</h2>
+        <h3>NOSFERATU(1922) Clip</h3>
+        <div class="video-container">
+            <video controls>
+                <source src="NOSFERATU(1922).mp4" type="video/mp4" alt="video on youtube to big for git hub">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <h2 class="section-title">Iconic Film theme</h2>
+        
+        <div class="audio-player">
+            <h3>The Third Man - Anton Karas Zither Theme</h3>
+            <audio controls>
+                <source src="Theme.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <h2 class="section-title">Classic Cinema Stills Gallery</h2>
+        <p>Click any image to view full size. Use arrow buttons to navigate.</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox(0)">
+                <img src="Citizen Kane.jpg" alt="Citizen Kane">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(1)">
+                <img src="Casablanca.jpg" alt="Casablanca">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(2)">
+                <img src="the third man.jpg" alt="The Third Man">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(3)">
+                <img src="Metropolis.jpg" alt="Metropolis">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(4)">
+                <img src="Nosferatu.jpg" alt="Nosferatu">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(5)">
+                <img src="Psycho.jpg" alt="Psycho">
+            </div>
+        </div>
+    </main>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
+            <button class="lightbox-nav lightbox-prev" onclick="changeImage(-1, event)">&#10094;</button>
+            <img id="lightbox-img" src="" alt="">
+            <button class="lightbox-nav lightbox-next" onclick="changeImage(1, event)">&#10095;</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; b01828733@studentmail.uws.ac.uk</p>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

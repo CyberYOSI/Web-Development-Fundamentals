@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beachview Guest House - Luxury Accommodation in Dornoch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Welcome to Beachview Guest House - A four-star accommodation in Dornoch, Scotland offering comfortable stays with stunning views.">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Beachview Logo">
+                Beachview
+            </a>
+            <!-- Add the hamburger button for mobile -->
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Rooms</a>
+                    <div class="dropdown-content">
+                        <a href="Glasgowroom.html">Glasgow room</a>
+                        <a href="Edinburghroom.html">Edinburgh room</a>
+                        <a href="Aberdeenroom.html">Aberdeen room</a>
+                        <a href="Dundeeroom.html">Dundee room</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="local-area.html">Local Area</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="btn">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Book Your Stay</h1>
+
+        <section class="booking-form">
+            <form class="reservation-form">
+                <div class="form-section">
+                    <h2>1. Choose Your Dates</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="check-in">Check-in Date *</label>
+                            <input type="date" id="check-in" name="check-in" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="check-out">Check-out Date *</label>
+                            <input type="date" id="check-out" name="check-out" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>2. Select Your Room</h2>
+                    <div class="form-group">
+                        <label for="room-type">Room Type *</label>
+                        <select id="room-type" name="room-type" required>
+                            <option value="">Please select...</option>
+                            <option value="firth-view">Glasgow room</option>
+                            <option value="ben-bhraggie">Edinburgh room</option>
+                            <option value="coastal-comfort">Aberdeen room</option>
+                            <option value="castle-view">Dundee room</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>3. Guest Details</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="guest-name">Full Name *</label>
+                            <input type="text" id="guest-name" name="guest-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guest-email">Email *</label>
+                            <input type="email" id="guest-email" name="guest-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guest-phone">Phone *</label>
+                            <input type="tel" id="guest-phone" name="guest-phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests *</label>
+                            <select id="guests" name="guests" required>
+                                <option value="" disabled selected>Select number of guests</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="family">Family</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>4. Additional Requirements</h2>
+                    <div class="form-group">
+                        <label for="arrival-time">Estimated Arrival Time</label>
+                        <select id="arrival-time" name="arrival-time">
+                            <option value="">Please select...</option>
+                            <option value="14-16">2:00 PM - 4:00 PM</option>
+                            <option value="16-18">4:00 PM - 6:00 PM</option>
+                            <option value="18-20">6:00 PM - 8:00 PM</option>
+                            <option value="20-22">8:00 PM - 10:00 PM</option>
+                            <option value="late">After 10:00 PM (by arrangement)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="special-requests">Special Requests</label>
+                        <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="dietary" value="yes">
+                            Dietary requirements (we will contact you for details)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>5. Terms & Conditions</h2>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="terms" required>
+                            I agree to the booking terms and conditions *
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">Request Booking</button>
+            </form>
+        </section>
+
+        <section class="booking-info">
+            <h2>Booking Information</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>📅 Check-in/out Times</h3>
+                    <p>Check-in: 2:00 PM - 10:00 PM</p>
+                    <p>Check-out: By 11:00 AM</p>
+                </div>
+                <div class="info-card">
+                    <h3>💳 Payment</h3>
+                    <p>25% deposit required to confirm booking</p>
+                    <p>Balance due on arrival</p>
+                </div>
+                <div class="info-card">
+                    <h3>❌ Cancellation Policy</h3>
+                    <p>Free cancellation up to 48 hours before check-in</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>📍 Beachview Guest House</p>
+                <p>Shore Road, Dornoch</p>
+                <p>Sutherland, Scotland</p>
+                <p>☎️ +44 (0)1862 810 555</p>
+                <p>📧 info@beachviewdornoch.com</p>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Glasgowroom.html">Our Rooms</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

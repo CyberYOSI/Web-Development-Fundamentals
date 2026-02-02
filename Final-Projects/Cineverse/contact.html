@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CineVerse: Archive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="site-title">CINEVERSE: ARCHIVE</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="archive.html">Archive</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="directors.html">Directors</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="additional.html">Additional</a>
+                <a href="info.html">Info</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>Share your thoughts on classic cinema or submit film recommendations to our archive.</p>
+
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message">Please enter your name</span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message">Please enter a valid email address</span>
+            </div>
+
+            <div class="form-group">
+                <label>Favorite Era of Cinema *</label>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="era" value="silent" required>
+                        Silent Era (1890s-1920s)
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="era" value="golden">
+                        Golden Age (1930s-1950s)
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="era" value="newwave">
+                        New Wave (1960s)
+                    </label>
+                </div>
+                <span class="error-message">Please select your favorite era</span>
+            </div>
+
+            <div class="form-group">
+                <label for="genre">Favorite Genre *</label>
+                <select id="genre" name="genre" required>
+                    <option value="">-- Select a Genre --</option>
+                    <option value="noir">Film Noir</option>
+                    <option value="expressionism">German Expressionism</option>
+                    <option value="neorealism">Italian Neorealism</option>
+                    <option value="drama">Psychological Drama</option>
+                    <option value="thriller">Thriller/Suspense</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="western">Western</option>
+                    <option value="scifi">Science Fiction</option>
+                </select>
+                <span class="error-message">Please select a genre</span>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea id="message" name="message" required placeholder="Share your thoughts, film recommendations, or questions about classic cinema..."></textarea>
+                <span class="error-message">Please enter a message</span>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        Subscribe to our monthly newsletter featuring classic film analysis and rare archive discoveries
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="read-more">Submit Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; b01828733@studentmail.uws.ac.uk</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert("Submission Done");
+            this.reset();
+        });
+    }
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Catalog - CineVerse: Archive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="site-title">CINEVERSE: ARCHIVE</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="archive.html">Archive</a>
+                <a href="catalog.html" class="active">Catalog</a>
+                <a href="directors.html">Directors</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="additional.html">Additional</a>
+                <a href="info.html">Info</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Film Catalog</h1>
+        <p>A comprehensive database of classic black and white cinema masterpieces. Click column headers to sort.</p>
+        <table id="filmTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Title</th>
+                    <th onclick="sortTable(1)">Year</th>
+                    <th onclick="sortTable(2)">Director</th>
+                    <th onclick="sortTable(3)">Country</th>
+                    <th onclick="sortTable(4)">Runtime (mins)</th>
+                    <th onclick="sortTable(5)">IMDB Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Citizen Kane</td>
+                    <td>1941</td>
+                    <td>Orson Welles</td>
+                    <td>USA</td>
+                    <td>119</td>
+                    <td>8.3</td>
+                </tr>
+                <tr>
+                    <td>Casablanca</td>
+                    <td>1942</td>
+                    <td>Michael Curtiz</td>
+                    <td>USA</td>
+                    <td>102</td>
+                    <td>8.5</td>
+                </tr>
+                <tr>
+                    <td>The Third Man</td>
+                    <td>1949</td>
+                    <td>Carol Reed</td>
+                    <td>UK</td>
+                    <td>104</td>
+                    <td>8.1</td>
+                </tr>
+                <tr>
+                    <td>Metropolis</td>
+                    <td>1927</td>
+                    <td>Fritz Lang</td>
+                    <td>Germany</td>
+                    <td>153</td>
+                    <td>8.3</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>1931</td>
+                    <td>Fritz Lang</td>
+                    <td>Germany</td>
+                    <td>117</td>
+                    <td>8.3</td>
+                </tr>
+                <tr>
+                    <td>The Seventh Seal</td>
+                    <td>1957</td>
+                    <td>Ingmar Bergman</td>
+                    <td>Sweden</td>
+                    <td>96</td>
+                    <td>8.2</td>
+                </tr>
+                <tr>
+                    <td>Bicycle Thieves</td>
+                    <td>1948</td>
+                    <td>Vittorio De Sica</td>
+                    <td>Italy</td>
+                    <td>89</td>
+                    <td>8.3</td>
+                </tr>
+                <tr>
+                    <td>Rashomon</td>
+                    <td>1950</td>
+                    <td>Akira Kurosawa</td>
+                    <td>Japan</td>
+                    <td>88</td>
+                    <td>8.2</td>
+                </tr>
+                <tr>
+                    <td>Nosferatu</td>
+                    <td>1922</td>
+                    <td>F.W. Murnau</td>
+                    <td>Germany</td>
+                    <td>94</td>
+                    <td>7.9</td>
+                </tr>
+                <tr>
+                    <td>Battleship Potemkin</td>
+                    <td>1925</td>
+                    <td>Sergei Eisenstein</td>
+                    <td>Soviet Union</td>
+                    <td>75</td>
+                    <td>8.0</td>
+                </tr>
+                <tr>
+                    <td>Sunset Boulevard</td>
+                    <td>1950</td>
+                    <td>Billy Wilder</td>
+                    <td>USA</td>
+                    <td>110</td>
+                    <td>8.4</td>
+                </tr>
+                <tr>
+                    <td>Psycho</td>
+                    <td>1960</td>
+                    <td>Alfred Hitchcock</td>
+                    <td>USA</td>
+                    <td>109</td>
+                    <td>8.5</td>
+                </tr>
+                <tr>
+                    <td>12 Angry Men</td>
+                    <td>1957</td>
+                    <td>Sidney Lumet</td>
+                    <td>USA</td>
+                    <td>96</td>
+                    <td>9.0</td>
+                </tr>
+                <tr>
+                    <td>The Cabinet of Dr. Caligari</td>
+                    <td>1920</td>
+                    <td>Robert Wiene</td>
+                    <td>Germany</td>
+                    <td>76</td>
+                    <td>8.0</td>
+                </tr>
+                <tr>
+                    <td>Tokyo Story</td>
+                    <td>1953</td>
+                    <td>Yasujirō Ozu</td>
+                    <td>Japan</td>
+                    <td>136</td>
+                    <td>8.2</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; b01828733@studentmail.uws.ac.uk</p>
+    </footer>
+
+    <script src="table-sort.js"></script>
+</body>
+</html>
