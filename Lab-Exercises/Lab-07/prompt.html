@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=j, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        prompt("Please enter your name:");
+        let firstName;
+        let surname;
+
+        firstName = prompt("Please enter your first name:");
+        surname = prompt("Please enter your surname:");
+
+        document.getElementById('content-container').innerHTML = '';
+
+        document.write('<h1 class="text-4xl font-bold text-indigo-600 mb-4">Hello ' + firstName + ', how are you today?</h1>');
+    </script>
+</body>
+</html>
