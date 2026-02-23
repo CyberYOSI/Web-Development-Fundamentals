@@ -9,6 +9,15 @@ Module Progress: A collection of labs covering the transition from basic HTML to
 📁 Repository Structure
 /Final-Project: The completed website files.
 
+You can experience the full view of them using this link
+
+https://cyberyosi.github.io/Web-Development-Fundamentals/Final-Projects/Beachview_Guest_House
+
+https://cyberyosi.github.io/Web-Development-Fundamentals/Final-Projects/Project_Proposal_Website
+
+https://cyberyosi.github.io/Web-Development-Fundamentals/Final-Projects/Cineverse
+
+
 /Lab-Exercises: Individual folders for each weekly lab (Lab 1, Lab 2, etc.).
 
 🛠️ Technical Skills
